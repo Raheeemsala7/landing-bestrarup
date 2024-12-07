@@ -134,7 +134,7 @@
 // });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const editor = grapesjs.init({
+    const editor = grapesjs.init({   
         container: '#editor',
         height: '100%',
         width: 'auto',
