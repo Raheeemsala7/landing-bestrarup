@@ -1,0 +1,118 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f9;
+  }
+
+
+  #editor-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  #editor {
+    width: 100% !important;
+    height: 100% !important;
+    border: 1px solid #ddd;
+    background: #4471ca;
+  }
+  
+  .panel__right {
+    width: 100px;
+    background: #f8f8f8;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .layers-container, .styles-container, .traits-container {
+    margin-bottom: 20px;
+  }
+   */
+
+   body {
+    margin: 0;
+  }
+  #editor {
+    height: 100vh !important;
+    flex: 1;
+  }
+    .panel__top {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background: #191f19;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+      }
+    
+    .panel__right {
+        /* top: 50px;
+        bottom: 0;
+        right: 0; */
+        width: 300px;
+        background: #191f19;
+        overflow-y: auto;
+        margin-top: 50px;
+      }
+
+
+      .control {
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+      }
+
+      .gjs-cv-canvas {
+        width: 100%;
+      }
+      
+
+      .panel__right  {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 100;
+        display: none;
+      }
+
+
+      .panel__right .gjs-sm-property .gjs-sm-input-holder {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .panel__right .gjs-sm-property .gjs-sm-input-holder label {
+        cursor: pointer;
+        font-size: 1.2em;
+        color: #333;
+      }
+      
+      .panel__right .gjs-sm-property .gjs-sm-input-holder label i {
+        margin: 0 5px;
+        transition: all 0.3s ease;
+      }
+      
+      .panel__right .gjs-sm-property .gjs-sm-input-holder label:hover i {
+        color: #4CAF50;
+      }
+
+
+
+      @media (max-width:992px) {
+        header.rahem {
+          flex-direction: row-reverse;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
